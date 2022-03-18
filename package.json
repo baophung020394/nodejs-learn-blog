@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baophung020394/nodejs-learn-blog.git"
+  },
+  "keywords": [
+    "bao",
+    "blog",
+    "nodejs"
+  ],
+  "author": "baopg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baophung020394/nodejs-learn-blog/issues"
+  },
+  "homepage": "https://github.com/baophung020394/nodejs-learn-blog#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
