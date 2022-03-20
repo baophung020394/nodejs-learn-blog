@@ -1,0 +1,4 @@
+{
+  "_comment": "Thêm các định dạng file cần nodemon watch",
+  "ext": "js mjs json" 
+}
