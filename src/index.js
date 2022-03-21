@@ -8,8 +8,11 @@ const port = 3000;
 // Set public assets path
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Middleware
+app.use(express.urlencoded());
+app.use(express.json())
 // HTTP logger
-app.use(morgan('combined'));
+// app.use(morgan('combined'));
 
 // Template engine
 // Configurations
@@ -28,6 +31,16 @@ app.get('/', (req, res) => {
 
 app.get('/news', (req, res) => {
   res.render('news');
+});
+
+app.get('/search', (req, res) => {
+  console.log(req.query.q)
+  res.render('search');
+});
+
+app.post('/search', (req, res) => {
+  console.log(req.body)
+  res.send('');
 });
 
 app.listen(port, () => {
